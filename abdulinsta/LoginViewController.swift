@@ -7,7 +7,8 @@
 //
 
 import UIKit
-import Parse 
+import Parse
+
 
 class LoginViewController: UIViewController {
     
@@ -26,14 +27,31 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func onSignIn(_ sender: Any) {
+    @IBAction func onSignIn(sender: AnyObject) {
+        PFUser.logInWithUsername(inBackground: usernameField.text!, password: passwordField.text!) { (user: PFUser?, error: Error) in
+            if user != nil {
+                print("you're logged in!")
+                self.performSegue(withIdentifier: "loginSeque", sender: nil)
+                
+            }
+            } as! PFUserResultBlock as! PFUserResultBlock
     }
+            
+            
+            
     
-    @IBAction func onSignUp(_ sender: Any) {
+    @IBAction func onSignUp(sender: AnyObject) {
         let newUser = PFUser()
         newUser.username = usernameField.text
         newUser.password = passwordField.text
-        newUser.SignUp 
+        newUser.signUpInBackground { (success: Bool, error: Error?) in
+            if success {
+                print("yay, created a user")
+                self.performSegue(withIdentifier: "loginSeque", sender: nil)
+            } else {
+                print(error?.localizedDescription as Any)
+            }
+        }
     }
     
     /*
@@ -45,5 +63,4 @@ class LoginViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }

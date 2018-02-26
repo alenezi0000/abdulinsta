@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+# abdulinsta
+>>>>>>> f7ac93d16e9d8fa769130e75dcadf2e8d0785df1
 # Project 4 - *Name of App Here*
 
 **Name of your app** is a photo sharing app using Parse as its backend.
@@ -24,12 +28,21 @@ The following **stretch** features are implemented:
 - [ ] Add a custom camera using the CameraManager library (+1pt)
 - [ ] User can load more posts once he or she reaches the bottom of the feed using infinite scrolling (+2pt)
 - [ ] Show the username and creation time for each post using section headers (+1pt)
+<<<<<<< HEAD
 - If you use TableView Section Headers to display the the username and creation time, you'll get "sticky headers" similar to the actual Instagram app.
 - [ ] After the user submits a new post, show a progress HUD while the post is being uploaded to Parse (+1pt)
 - User Profiles:
 - [ ] Allow the logged in user to add a profile photo (+2pt)
 - [ ] Display the profile photo with each post (+1pt)
 - [ ] Tapping on a post's username or profile photo goes to that user's profile page (+2pt)
+=======
+   - If you use TableView Section Headers to display the the username and creation time, you'll get "sticky headers" similar to the actual Instagram app.
+- [ ] After the user submits a new post, show a progress HUD while the post is being uploaded to Parse (+1pt)
+- User Profiles:
+   - [ ] Allow the logged in user to add a profile photo (+2pt)
+   - [ ] Display the profile photo with each post (+1pt)
+   - [ ] Tapping on a post's username or profile photo goes to that user's profile page (+2pt)
+>>>>>>> f7ac93d16e9d8fa769130e75dcadf2e8d0785df1
 - [ ] User can comment on a post and see all comments for each post in the post details screen (+3pt)
 - [ ] User can like a post and see number of likes for each post in the post details screen (+1pt)
 - [ ] Run your app on your phone and use the camera to take the photo (+1pt)
@@ -65,6 +78,7 @@ Describe any challenges encountered while building the app.
 
 ## License
 
+<<<<<<< HEAD
 Copyright [yyyy] [name of copyright owner]
 
 Licensed under the Apache License, Version 2.0 (the "License");
@@ -78,3 +92,18 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
+=======
+    Copyright [yyyy] [name of copyright owner]
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+>>>>>>> f7ac93d16e9d8fa769130e75dcadf2e8d0785df1
